@@ -9,7 +9,7 @@ from subprocess import getoutput as run
 
 owner = 1891633746
 
-@bot.on message(filters.user(owner) & filters.command("eval"))
+@bot.on-message(filters.user(owner) & filters.command("eval"))
 async def eval(client, message):
     status_message = await message.reply_text("Processing ...")
     cmd = message.text.split(" ", maxsplit=1)[1]
@@ -66,7 +66,7 @@ async def aexec(code, client, message):
     return await locals()["__aexec"](client, message)
 
 
-@bot.on message(filters.command("leave") & filters.user(owner))
+@bot.on-message(filters.command("leave") & filters.user(owner))
 async def leave(client, message):
     cmd = message.text.split(maxsplit=1)[1]
     try:
@@ -75,7 +75,7 @@ async def leave(client, message):
         print(e)
 
 
-@bot.on message(filters.command("logs") & filters.user(owner))
+@bot.on-message(filters.command("logs") & filters.user(owner))
 def logs(_, m):
     run_logs = run("tail logs.txt")
     message = m.reply_text("sending logs...")
@@ -87,7 +87,7 @@ def logs(_, m):
     message.delete()
 
 
-@bot.on message(filters.command("sh") & filters.user(owner))
+@bot.on-message(filters.command("sh") & filters.user(owner))
 def sh(_, m):
     code = m.text.replace(m.text.split(" ")[0], "")
     x = run(code)
