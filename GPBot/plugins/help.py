@@ -5,8 +5,8 @@ from Configs import Config
 btn =[
     [Button.inline("Admin", data="admin"), Button.inline("Bans", data="bans")],
     [Button.inline("Pins", data="pins"), Button.inline("Pugres", data="purges")],
-    [Button.inline("Locks", data="locks"), Button.inline("Misc", data="misc")],
-    [Button.inline("Chat Cleaner", data="zombies")]]
+    [Button.inline("Locks", data="locks"), Button.inline("Dev", data="dev")],
+    [Button.inline("Zombies", data="zombies")]]
 
 HELP_TEXT = """
 **Heya {} help menu here:**
@@ -14,8 +14,8 @@ HELP_TEXT = """
 /start - To Start Me ;)
 /help - To Get Available Help Menu
 
-__Report Bugs At--->__ **@TgxSupportChat**
-All cmd can be used with ! or ? or /.
+__Report Bugs At--->__ **@JackSparrowSupport**
+All cammond can be used with ! or ? or /.
 """.format(Config.BOT_US)
 
 
