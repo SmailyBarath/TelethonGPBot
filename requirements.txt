@@ -1,2 +1,16 @@
 telethon>=1.21.1
 requests
+bs4
+aiohttp
+uvloop
+pyrogram
+pillow
+redis
+dnspython
+tgcrypto
+typing
+Python_ARQ
+motor
+opencv-python-headless
+pyshorteners
+wget
