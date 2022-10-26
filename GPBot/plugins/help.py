@@ -3,10 +3,10 @@ from GPBot import Stark
 from Configs import Config
 
 btn = [
-    [Button.inline("Admin", data="admin"), Button.inline("Bans", data="bans")],
-    [Button.inline("Pins", data="pins"), Button.inline("Pugres", data="purges")],
-    [Button.inline("Locks", data="locks"),
-    [Button.inline("Zombies", data="zombies")]]
+        [Button.inline("Admin", data="admin"), Button.inline("Bans", data="bans")],
+        [Button.inline("Pins", data="pins"), Button.inline("Pugres", data="purges")],
+        [Button.inline("Locks", data="locks"),
+        [Button.inline("Zombies", data="zombies")]]
 
 HELP_TEXT = """
 **Heya {} help menu here:**
