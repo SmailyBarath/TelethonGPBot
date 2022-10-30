@@ -22,14 +22,6 @@
       "description": "Your Bot Token.",
       "value": ""
     },
-    "RULES": {
-      "description": "Your Group Rules",
-      "value": ""
-    },
-    "WELCOME_TEXT": {
-      "description": "The msg you want in welcome msg.",
-      "value": ""
-    },
     "BOT_US": {
       "description": "Your Bot username without '@'.",
       "value": ""
