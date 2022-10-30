@@ -104,7 +104,7 @@ async def cancel_spam(event):
 MENTION_HELP = """
 ✘ A module from which Mention members in chat!
 
-‣ /tagall or @all - To mention all members in your group, without exception.
+‣ `/tagall` or @all - To mention all members in your group, without exception.
 """
 
 
