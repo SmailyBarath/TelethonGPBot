@@ -98,7 +98,7 @@ async def cancel(event):
     await event.answer("Group Creator Required!")
 
 
-@Stark.on(events.callbackquery.CallbackQuery(data="pins"))
+@Stark.on(events.callbackquery.CallbackQuery(data="pin"))
 async def _(event):
 
     await event.edit(PINS_TEXT, buttons=[[Button.inline("« Bᴀᴄᴋ", data="help")]])
