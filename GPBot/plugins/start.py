@@ -3,9 +3,9 @@ from telethon import events, Button
 
 PM_START_TEXT = """
 **Hi {}**
-I am a bot who works for @JackSparrowSupport and can detect spammers in groups can protect groups from then
+I well promise i can protect your group
 
-**Click the below button for getting help menu!**
+**Click the below button for help menu!**
 """
 
 @Stark.on(events.NewMessage(pattern="^[?!/]start$"))
