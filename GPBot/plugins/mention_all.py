@@ -1,6 +1,6 @@
 import asyncio
 
-from telethon import events
+from telethon import events, Button
 from telethon.errors import UserNotParticipantError
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
