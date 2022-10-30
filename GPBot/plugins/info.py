@@ -7,7 +7,7 @@ from telethon.tl.functions.photos import GetUserPhotosRequest as P
 from telethon.tl.functions.users import GetFullUserRequest
 
 
-MISC_HELP = """
+INFO_HELP = """
 **✘ An "odds and ends" module for small, simple commands which don't really fit anywhere.**
 
 ‣ `/id` - To get current chat id or replied user id.
@@ -69,6 +69,6 @@ async def info(event):
     await event.reply(textn.format(ha.first_name, ha.last_name, ha.id, ha.username, sedd.count, hu.about, ha.id))
    
 
-@Stark.on(events.callbackquery.CallbackQuery(data="misc"))
+@Stark.on(events.callbackquery.CallbackQuery(data="info"))
 async def _(event):
-    await event.edit(MISC_HELP, buttons=[[Button.inline("« Bᴀᴄᴋ", data="help")]])
+    await event.edit(INFO_HELP, buttons=[[Button.inline("« Bᴀᴄᴋ", data="help")]])
