@@ -9,8 +9,8 @@ from GPBot.status import *
 CLEANER_HELP = """
 **✘ This is A Module To Remove Deleted Accounts From Your Groups!**
 
-‣ `?zombies` - To find zombies accounts in your chat.
-‣ `?zombies clean` - To remove the deleted accounts from your chat.
+‣ `/zombies` - To find zombies accounts in your chat.
+‣ `/zombies clean` - To remove the deleted accounts from your chat.
 """
 
 
