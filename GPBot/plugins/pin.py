@@ -5,10 +5,10 @@ from GPBot.status import *
 PINS_TEXT = """
 **✘ All the pin related commands can be found here; keep your chat up to date on the latest news with a simple pinned message!**
 
-‣ `?pin` - To pinned a reply msg.
-‣ `?unpin` - To Unpin the latest pinned msg.
-‣ `?unpinall` - To unpinall all pinned msgs at once.
-‣ `?pinned` - To get current pinned msg.
+‣ `/pin` - To pinned a reply msg.
+‣ `/unpin` - To Unpin the latest pinned msg.
+‣ `/unpinall` - To unpinall all pinned msgs at once.
+‣ `/pinned` - To get current pinned msg.
 
 **➥Note:** __Add `notify` after ?pin to notify all chat members.__
 """
