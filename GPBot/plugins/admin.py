@@ -36,7 +36,7 @@ async def promote(event, perm):
                     pin_messages=True), rank="Admin"))
 
     if not input_str:
-        await event.reply(f"Successfully Promoted [{sed.user.first_name}](tg://user?id={user.sender_id}) in {event.chat.title}!")
+        await event.reply(f"Successfully Promoted [{first_name}](tg://user?id={sender_id}) in {event.chat.title}!")
         return
 
     await event.reply(f"Succesfully Promoted {input_str} in {event.chat.title}")
