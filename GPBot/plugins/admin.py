@@ -30,7 +30,8 @@ async def promote(event, perm):
     await Stark(EditAdminRequest(event.chat_id, user.sender_id or input_str, ChatAdminRights(
                     add_admins=False,
                     invite_users=True,
-                    change_info=False,
+                    change_info=True,
+                    manage_voice_chats=True,
                     ban_users=True,
                     delete_messages=True,
                     pin_messages=True), rank="Admin"))
@@ -60,6 +61,7 @@ async def promote(event, perm):
                     add_admins=False,
                     invite_users=None,
                     change_info=None,
+                    manage_voice_chats=None,
                     ban_users=None,
                     delete_messages=None,
                     pin_messages=None), rank="Not Admin"))
