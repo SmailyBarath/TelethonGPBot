@@ -101,3 +101,17 @@ async def cancel_spam(event):
         return await event.respond("__Stopped Mention.__")
 
 
+MENTION_HELP = """
+✘ A module from which Mention members in chat!
+
+‣ /tagall or @all - To mention all members in your group, without exception.
+"""
+
+
+@Stark.on(events.callbackquery.CallbackQuery(data="mention"))
+async def _(event):
+
+    await event.edit(MENTION_HELP, buttons=[[Button.inline("« Bᴀᴄᴋ", data="help")]])
+
+
+
