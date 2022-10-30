@@ -25,7 +25,7 @@ async def mentionall(event):
 
     is_admin = False
     try:
-        partici_ = await client(GetParticipantRequest(event.chat_id, event.sender_id))
+        partici_ = await Stark(GetParticipantRequest(event.chat_id, event.sender_id))
     except UserNotParticipantError:
         is_admin = False
     else:
