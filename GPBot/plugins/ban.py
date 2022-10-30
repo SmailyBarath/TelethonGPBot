@@ -4,7 +4,7 @@ from telethon import events, Button
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights
 
-BANS_TEXT = """
+BAN_TEXT = """
 **✘ Some people need to be publicly banned; spammers, annoyances, or just trolls.**
 
 ‣ `/kickme` - To self Kick you from a chat.
@@ -167,6 +167,6 @@ async def sban(event, perm):
     await Stark(EditBannedRequest(event.chat_id, x, ChatBannedRights(until_date=None, view_messages=True)))
     await event.reply(f"Succesfully Banned [{info.first_name}](tg://user?id={replied_user}) from {event.chat.title}")
 
-@Stark.on(events.callbackquery.CallbackQuery(data="bans"))
+@Stark.on(events.callbackquery.CallbackQuery(data="ban"))
 async def banhelp(event):
-    await event.edit(BANS_TEXT, buttons=[[Button.inline("« Bᴀᴄᴋ", data="help")]])
+    await event.edit(BAN_TEXT, buttons=[[Button.inline("« Bᴀᴄᴋ", data="help")]])
