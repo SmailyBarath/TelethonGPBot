@@ -5,7 +5,7 @@ from Configs import Config
 btn = [
         [Button.inline("Admin", data="admin"), Button.inline("Bans", data="bans")],
         [Button.inline("Pin", data="pin"), Button.inline("Pugres", data="purges")],
-        [Button.inline("Locks", data="locks"), Button.inline("Test", data="test")],
+        [Button.inline("Locks", data="locks"), Button.inline("Mention All", data="mention")],
         [Button.inline("Zombies", data="zombies")]
 ]
 
