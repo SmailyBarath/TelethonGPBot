@@ -10,7 +10,7 @@ PINS_TEXT = """
 ‣ `/unpinall` - To unpinall all pinned msgs at once.
 ‣ `/pinned` - To get current pinned msg.
 
-**➥Note:** __Add `notify` after ?pin to notify all chat members.__
+**➥Note:** __Add `notify` after `/pin` to notify all chat members.__
 """
 
 @Stark.on(events.NewMessage(pattern="^[?!/]pinned"))
