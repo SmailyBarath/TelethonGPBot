@@ -10,8 +10,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 MISC_HELP = """
 **✘ An "odds and ends" module for small, simple commands which don't really fit anywhere.**
 
-‣ `?id` - To get current chat id or replied user id.
-‣ `?info` - To get info of a user.
+‣ `/id` - To get current chat id or replied user id.
+‣ `/info` - To get info of a user.
 """
 
 @Stark.on(events.NewMessage(pattern="^[!?/]id"))
