@@ -31,7 +31,7 @@ async def promote(event, perm):
                     add_admins=False,
                     invite_users=True,
                     change_info=True,
-                    manage_voice=True,
+                    manage_chats=True,
                     ban_users=True,
                     delete_messages=True,
                     pin_messages=True), rank="Admin"))
@@ -61,7 +61,7 @@ async def promote(event, perm):
                     add_admins=False,
                     invite_users=None,
                     change_info=None,
-                    manage_voice=None,
+                    manage_chats=None,
                     ban_users=None,
                     delete_messages=None,
                     pin_messages=None), rank="Not Admin"))
