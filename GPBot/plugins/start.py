@@ -3,7 +3,7 @@ from telethon import events, Button
 
 PM_START_TEXT = """
 **Hi {}**
-I can manage your group and i will promise and protect your group Hit /help.
+I can manage your group and i will promise to protect your group
 
 **Click the below button for help menu!**
 """
