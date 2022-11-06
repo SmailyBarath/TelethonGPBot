@@ -11,7 +11,7 @@ PR_HELP = """
 ‣ `/del` - Deletes the replied to message.
 """
 
-@Stark.on(events.NewMessage(pattern=r"^[?!]purge"))
+@Stark.on(events.NewMessage(pattern=r"^[?!/]purge"))
 @is_admin
 async def purge_messages(event, perm):
     if not perm.delete_messages:
